@@ -1,0 +1,33 @@
+<div class="modal-inserir-parcela" *ngIf="modalParcelaOpen">
+    <div class="modal">
+        <div class="modal-content">
+            <div id="form">
+                <h2>Nova Parcela</h2>
+                <small [ngClass]="{'has-error': parcelaJaCadastrada}">Parcela já cadastrada</small>
+                <form [formGroup]="formGroup">
+                    <div class="input-group">
+                        <label for="numero" class="sr-only">Número</label>
+                        <input type="number" id="numero" name="numero" placeholder="Número" formControlName="Numero">
+                        <small [ngClass]="{'has-error' : formGroup.controls['Numero'].invalid}">Preenchimento Obrigatório [Número parcela]</small>
+                    </div>
+                    <div class="input-group">
+                        <label for="valor" class="sr-only">Valor</label>
+                        <input currencyMask [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }" id="valor" name="valor" formControlName="Valor">
+                        <small [ngClass]="{'has-error' : formGroup.controls['Valor'].invalid}">Preenchimento Obrigatório [Valor]</small>
+                    </div>
+                    <div class="input-group">
+                        <label for="data" class="sr-only">Vencimento</label>
+                        <input type="date" id="data" name="data" formControlName="Vencimento">
+                        <small [ngClass]="{'has-error' : formGroup.controls['Vencimento'].invalid}">Preenchimento Obrigatório [Vencimento]</small>
+                    </div>
+                    <div class="input-group actions">
+                        <a href="#" (click)="closeModal()" class="button cancel">Cancelar</a>
+                        <button href="#" (click)="onSave()" [ngClass]="{'button-disabled' : formGroup.invalid}">Salvar</button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+    </div>
+</div>
+

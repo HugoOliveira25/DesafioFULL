@@ -1,0 +1,30 @@
+<div class="div-table">
+    <a class="botao-adicionar" href="#" (click)="isOpen()">+ Adicionar Titulo</a>
+    <table id="data-table" *ngIf="titulos.length > 0">
+        <thead>
+            <tr>
+                <th class="titulo-head">Número do título</th>
+                <th class="titulo-head">Nome do devedor</th>
+                <th class="titulo-head">Qtde de parcelas</th>
+                <th class="titulo-head">Valor original</th>
+                <th class="titulo-head">Dias em atraso</th>
+                <th class="titulo-head">Valor atualizado na data de hoje</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="titulo" *ngFor="let titulo of titulos">
+                <td>{{titulo.Numero}}</td>
+                <td>{{titulo.NomeDevedor}}</td>
+                <td>{{titulo.NumeroParcelas}}</td>
+                <td>{{titulo.ValorOriginal | currency }}</td>
+                <td>{{titulo.DiasEmAtraso}}</td>
+                <td>{{titulo.ValorAtualizadoHoje | currency }}</td>
+            </tr>   
+        </tbody>
+    </table>
+    <p style="margin-top: 5rem; font-weight: bold;" *ngIf="titulos.length <= 0">Nenhum título cadastrado.</p>
+</div>
+<app-modal-inserir-titulo [modalOpen]="modalOpen" (closed)="handleClosed($event)" (onTitulos)="handleTitulos($event)"></app-modal-inserir-titulo>
+
+
+

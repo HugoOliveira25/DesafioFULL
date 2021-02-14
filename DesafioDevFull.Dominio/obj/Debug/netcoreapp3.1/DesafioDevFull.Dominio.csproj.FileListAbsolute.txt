@@ -1,0 +1,8 @@
+C:\sistemas\DesafioDevFull\DesafioDevFull.Dominio\bin\Debug\netcoreapp3.1\DesafioDevFull.Dominio.deps.json
+C:\sistemas\DesafioDevFull\DesafioDevFull.Dominio\bin\Debug\netcoreapp3.1\DesafioDevFull.Dominio.dll
+C:\sistemas\DesafioDevFull\DesafioDevFull.Dominio\bin\Debug\netcoreapp3.1\DesafioDevFull.Dominio.pdb
+C:\sistemas\DesafioDevFull\DesafioDevFull.Dominio\obj\Debug\netcoreapp3.1\DesafioDevFull.Dominio.AssemblyInfoInputs.cache
+C:\sistemas\DesafioDevFull\DesafioDevFull.Dominio\obj\Debug\netcoreapp3.1\DesafioDevFull.Dominio.AssemblyInfo.cs
+C:\sistemas\DesafioDevFull\DesafioDevFull.Dominio\obj\Debug\netcoreapp3.1\DesafioDevFull.Dominio.csproj.CoreCompileInputs.cache
+C:\sistemas\DesafioDevFull\DesafioDevFull.Dominio\obj\Debug\netcoreapp3.1\DesafioDevFull.Dominio.dll
+C:\sistemas\DesafioDevFull\DesafioDevFull.Dominio\obj\Debug\netcoreapp3.1\DesafioDevFull.Dominio.pdb

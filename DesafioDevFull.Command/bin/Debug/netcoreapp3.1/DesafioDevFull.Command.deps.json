@@ -1,0 +1,36 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v3.1",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v3.1": {
+      "DesafioDevFull.Command/1.0.0": {
+        "dependencies": {
+          "DesafioDevFull.Dominio": "1.0.0"
+        },
+        "runtime": {
+          "DesafioDevFull.Command.dll": {}
+        }
+      },
+      "DesafioDevFull.Dominio/1.0.0": {
+        "runtime": {
+          "DesafioDevFull.Dominio.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "DesafioDevFull.Command/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "DesafioDevFull.Dominio/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
